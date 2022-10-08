@@ -1,0 +1,45 @@
+.jp {
+    font-size: 25pt;
+}
+.furigana_enabled {
+    line-height: 2.1em;
+}
+.furigana_enabled .word {
+    margin-right: 0.5em;
+    position: relative;
+    top: 0.6em;
+    display: inline-block;
+    white-space: nowrap;
+}
+.furigana_enabled .kanji::before {
+    content: attr(data-reading);
+    color: gray;
+    font-size: 50%;
+    line-height: 1;
+    position: absolute;
+    top: -0.5em;
+    white-space: nowrap;
+}
+.japanese_gothic {
+    font-family: "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "游ゴシック", YuGothic, "ＭＳ Ｐゴシック", "MS PGothic", "ＭＳ ゴシック", "MS Gothic", sans-serif;
+}
+
+a:link, a:visited {
+    color: rgb(0, 0, 0);
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 20pt;
+  }
+a:hover, a:active {
+background-color: rgb(255, 255, 255);
+}
+
+.fullheight {
+    height: 100%;
+  }
+
+  img {
+    width: 70%;
+    height: auto;
+  }
